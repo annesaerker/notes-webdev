@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LocalStorage</title>
+<style>
+</style>
+</head>
+<body>
+
+<script>
+
+/* Question 1
+Convert obejct to string
+You cannot write ojects to the local storage 
+( NO arrays, or JSON or any other object)
+*/
+
+    var aProducts = ["A","B","C","D"];
+    console.log(aProducts);
+    // use the object (array)
+    // convert the object to text (string)
+    var sProducts = JSON.stringify(aProducts);
+    console.log(sProducts);
+
+/* Question 2
+Write the text that looks like an array to the local storage
+*/
+
+    localStorage.sProducts = sProducts;
+
+/* Question 3
+Create an array with 3 users (name) and save it to the localStorage
+*/
+   
+    var aUserNames = ["A","B","C"];
+    console.log(aUserNames);
+    var sUserNames = JSON.stringify(aUserNames);
+    localStorage.sUserNames = sUserNames;
+
+/* Question 4
+Delete the variable sUserNames and its content, but only that specific variable, not all the localStorage
+*/
+    localStorage.removeItem("sUserNames");
+
+/* Question 5
+Clear everything in the localStorage
+*/
+    localStorage.clear() 
+
+/* Question 6
+Read from localstorage
+*/
+
+    var sProducts = localStorage.sProducts;
+    console.log(sProducts);
+
+    // convert the string to an object
+    var aProducts = JSON.parse( sProducts );
+    console.log(aProducts);
+    aProducts.push("x");
+    console.log(aProducts);
+
+
+</script>
+</body>
+</html>

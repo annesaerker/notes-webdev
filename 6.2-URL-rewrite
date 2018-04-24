@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^$ test.html
+RewriteRule ^contact-us$ contact-us.php

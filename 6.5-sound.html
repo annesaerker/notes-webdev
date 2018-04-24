@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proxy</title>
+    </head>
+    <body>
+
+        <button id="btnPlaySound">PLAY SOUND</button>
+        
+        <script>
+
+                // 1. Play sound
+                // set the sound file
+                var oSound = new Audio('sound.mp3');
+                // play the sound
+                oSound.play();
+
+                // 2. Click on button play sound
+                btnPlaySound.addEventListener( "click" , function(){
+                    // set the sound file
+                    var oSound = new Audio('sound.mp3');
+                    // play the sound
+                    oSound.play();
+                });
+        
+   
+            
+            </script>
+    </body>
+</html>

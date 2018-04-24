@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SPA - Single-page application</title>
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #pageMainMenu{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100vw;
+        height: 100vh;
+        background-color: purple;
+        color: white;
+        font-size: 50px;
+        z-index: 1;
+    }   
+
+
+    #pageOne{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        font-size: 50px;
+    }   
+
+
+    #pageTwo{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        color: white;
+        font-size: 50px;
+    }   
+
+</style>
+</head>
+<body>
+
+<button class="btnShowPage" data-showThisPage="pageOne">PAGE ONE</button>
+<button class="btnShowPage" data-showThisPage="pageTwo">PAGE TWO</button>
+<button class="btnShowPage" data-showThisPage="pageMainMenu">MAIN MENU</button>
+
+<div id="pageMainMenu" class="page">
+    MAIN MENU
+</div>
+
+<div id="pageOne" class="page">ONE</div>
+
+
+<div id="pageTwo" class="page">TWO</div>
+
+<script>
+    
+    var aBtnShowPages = document.getElementsByClassName("btnShowPage");
+    // this is an array
+    for(var i = 0; i < aBtnShowPages.length; i++)
+    {
+        // console.log("x");
+        aBtnShowPages[i].addEventListener("click",function(){
+            // console.log("x");
+            // Hide the pages
+            var aPages = document.getElementsByClassName( "page" );
+            for(var j = 0; j < aPages.length; j++)
+            {
+                // console.log("x");
+                aPages[j].style.display = "none";
+            }
+
+            var sDataAttibute = this.getAttribute("data-showThisPage");
+            // pageOne or pageTwo
+            console.log(sDataAttibute);
+            document.getElementById(sDataAttibute).style.display = "flex";
+        });
+    }
+
+
+</script>
+</body>
+</html>

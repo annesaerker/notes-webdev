@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX with POST passing 1 value</title>
+</head>
+<body>
+
+
+		<form id="frmUser">
+			<input type="text" name="txtUserName">
+			<button type="button" id="btnSave">SAVE</button>
+		</form>
+
+
+		<script>
+			
+			btnSave.addEventListener( "click" , function(){
+			  var ajax = new XMLHttpRequest();
+
+			  ajax.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			     	var sDataFromServer = this.responseText;
+			     	console.log("THE SERVER SEND ME THIS:" , sDataFromServer);
+	     		}
+		    }			
+
+			  ajax.open( "POST", "api-save-data.php", true );
+			  // What am I posting ?????
+			  var jFrmUser = new FormData( frmUser );
+			  // console.log(sFrmUser);
+			  ajax.send( jFrmUser );	
+			});
+
+
+
+			
+    </script>
+    
+
+    
+</body>
+</html>

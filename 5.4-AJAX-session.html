@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIMPLE - LOGIN</title>
+</head>
+<body>
+
+
+		<script>
+
+		
+	  var ajax = new XMLHttpRequest();
+	  ajax.onreadystatechange = function() 
+	  {
+	    if (this.readyState == 4 && this.status == 200) 
+	    {
+	     	var sDataFromServer = this.responseText;
+	     	console.log(sDataFromServer);
+   		}
+    }			
+	  ajax.open( "GET", "api-login.php" , true );
+	  ajax.send();					
+		
+			  	
+
+    </script>
+    
+
+    
+</body>
+</html>

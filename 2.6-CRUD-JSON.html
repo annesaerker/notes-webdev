@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>CRUD JSON</title>
+    <style></style>
+</head>
+<body>
+    CRUD JSON
+    
+<script>
+
+var jUser = {"name":"A","email":"a@a.com"};
+console.log(jUser);
+
+// Add data to the object - write to it
+jUser.lastName = "B";
+
+// Read the lastName
+console.log( jUser.lastName );
+
+// Update a key - update the lastName to X
+jUser.lastName = "X";
+console.log( jUser.lastName );
+
+// Delete a key
+delete jUser.email;
+console.log( jUser );
+
+</script>
+</body>
+</html>

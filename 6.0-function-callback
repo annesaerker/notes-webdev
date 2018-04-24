@@ -1,0 +1,15 @@
+function callbacks
+
+function testMe( sLetter , callback ){
+console.log(sLetter);
+callback();
+}
+testMe( "A" , function(){console.log("DONE")} );
+
+function callbacks with argument
+
+function testMe( sLetter , callback ){
+console.log(sLetter);
+callback( sLetter );
+}
+testMe( "A" , function( sTestMeLetter ){console.log(sTestMeLetter)} );

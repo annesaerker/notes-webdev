@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>JSON</title>
+    <style></style>
+</head>
+<body>
+   JSON
+    
+<script>
+
+/* 1
+Create empty JSON object
+*/
+var jData = {};
+
+/* 2
+Create Json object with the a key and an value
+Extract and show the name
+*/
+var jData = {"name":"Santiago"}; // key : value
+console.log( jData );
+// extract and show the name
+console.log( jData.name );
+
+/* 3
+Create a JSON object with a name, lastname and school.
+Show name and then show lastname
+*/
+var jData = { "name":"A" , "lastName":"B" , "school":"KEA" };
+console.log( jData );
+// show the name
+console.log( jData.name, jData.school);
+// show the lastName
+console.log( jData.lastName );
+
+/* 4
+Add data(lastname to obejct) - write to it
+*/
+var jUser = {"name":"A","email":"a@a.com"};
+console.log(jUser);
+// Add data to the object - write to it
+jUser.lastName = "B";
+console.log(jUser);
+
+
+
+</script>
+</body>
+</html>

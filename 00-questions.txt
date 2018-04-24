@@ -1,0 +1,289 @@
+
+QUESTIONS FOR THE RE-EXAM
+
+
+BASIC STRING AND NUMBER QUESTIONS
+
+1. console.log the a variable where the value  = Hi, my name is A B. The year is 2017 (1.1)
+
+2. Add two varibles price and tax together. The answer should be 11, using a total varible (parseInt, parseFloat, Number) (1.2)
+
+3. What would you use to show decimals: var price = "10.95"; ? (1.2)
+
+4. How do you make sure you show 2 decimals all the time? (1.2)
+
+
+IF ELSE STATMENT QUESTIONS
+
+5. Create one or two variables and use an if statment to make an comparesome it in an if statment (use {} as you like) (1.3)
+
+6. Build a system that allows a user to login with either an email or a phone number. (1.4)
+
+
+ARRAY QUESTIONS
+
+7. Create array and get value at position 1 (1.5)
+
+8. Create array and then add the letter D to array (1.5) 
+
+9. Create array and then delete the last value (1.5)
+
+10. Create array and then add value to the start of array (1.5)
+
+11. Create array and then delete from beginning of the array (1.5)
+
+12. Create array [A,B,NO,?] and variables for username, password, correctUsername, correctPassword.
+    If the user name and password are correct, you will change the NO to YES in the array, 
+    else you will change the NO to a -- (1.6)
+
+13. Create array and use splice to delete value in array (1.7)
+
+14. Create array and delete value at position 1 and define the number of elements to delete. (1.7)
+
+15. Create for loop (1.8)
+
+16. Create array ["A","NO","C","D"] variables for username, password, correctUsername, correctPassword.
+    Use if statment and indexOf()
+    If login is correct change NO to YES 
+    else NO will be -- (1.8)
+
+17. Create array ["NO","NO","C","NO","E"] and create for loop, that changes all NO to Yes (1.8)
+
+18. Create array ["A", "A", "B","A","D","A"] and create for loop that deletes all A's (1.8)
+
+19. Create array [ ["A",["B"]],["C",[["D",["XX",[["YY"]]]],["E"]]],["X"]] and locate position of YY (1.9)
+
+20. Create array [ [1,"A"],[2,"B"] ] and create a loop that makes it possible to use one variable to display the price and name of both products (1.9)
+
+
+SINGLE PAGE APPLICATION 
+
+21. How do you set up a single page application? (2.0)
+
+
+INSERT ADJECENT HTML
+
+22. Give an example of how you could use an insertAdjacentHTML? (2.1)
+
+
+LocalStorage
+
+23. Convert object to string (2.2)
+
+24. Write text that looks like an array to the local storage (2.2)
+
+25. Create array with 3 users (just the name) and save it to the localStorage (2.2)
+
+26. Delete a specifik variable from the local storage (2.2)
+
+27. Clear the local storage (2.2)
+
+28. Read from localstorage (2.2)
+
+
+FUNCTION QUESTIONS
+
+29. Create a function that calls another function (2.4)
+
+30. Create a function with two arguments (2.4)
+
+31. Create a function with five arguments (2.4)
+
+32. Create a function that returns a value (2.4) 
+
+33. Create a function that takes two arguments.
+    The 1st arg is a number
+    The 2nd arg is a product name
+    The function RETURNS an array containing the number and the 
+    product name
+    Show the array in the console (2.4)
+
+
+JSON QUESTIONS
+
+34. Create empty JSON object (2.5)
+
+35. Create JSON object with the a key and an value and extract and show the name (2.5)
+
+36. Create a JSON object with a name, lastname and school. Show name and then show lastname (2.5)
+
+37. Create JSON object with name. Write lastname to object (2.6)
+
+38. Update lastname to x (2.6)
+
+39. Delete email (2.6)
+
+
+JSON AND ARRAY QUESTIONS
+
+40. Create an array with an JSON object (2.7)
+
+41. Read name from the object (2.7)
+
+42. Add another object with a name and read that name (2.7)
+
+43. Create an array with a JSON obejct
+    The JSON object will contain a name and phone key
+    The value for the name is A and the value for the phone is this array of numbers [1,2,3]
+    console.log (number 2)
+
+44. Add a user to an array. The user is a JSON object (2.8)
+
+
+SET TIMEOUT AND SET INTERVAL QUESTIONS
+
+45. Create a function and use a setTimout (2.9)
+
+46. Create a function and use a setInterval (2.9)
+
+47. Create counter variable, then create function with a setInterval that counts the time the function has run (2.9)
+
+
+UNIQUEID QUESTIONS
+
+48. Create uniqueID (3.0)
+
+49. Create JSON object with a uniqueid (3.0)
+
+
+RANDOM NUMBER
+
+50. Print out everyother number, all straigth numbers from 0 to 50.
+
+
+PHP QUESTIONS
+
+
+PHP ARRAY QUESTIONS
+
+51. Create empty array (4.0)
+
+52. Create array with 2 items (4.0)
+
+53. Read first item in array (4.0)
+
+54. Read everything in array (4.0)
+
+55. Update item in array (4.0)
+
+56. Delete item in array (4.0)
+
+57. Delete everything in array (4.0)
+
+
+58. Mix HTML and php (4.0)
+
+ADDRESS BAR QUESTIONS
+
+59. Get ID in the address bar (4.2)
+
+
+PHP JSON QUESTIONS
+
+60. Convert text into object (4.3)
+
+61. Get file contents from txt file ()
+
+62. Write something to a txt file 
+
+63. Create empty JSON object (4.5) 
+
+64. Read from JSON object (4.5) 
+
+65. Update JSON object (4.5) 
+
+66. Delete from JSON object (4.5) 
+
+67. Create a array with a JSON object (4.5) 
+
+
+AJAX QUESTIONS
+
+68. Get letter with AJAX (4.6)
+
+69. Use AJAX to get data from an array and display it in the page (4.7)
+
+
+RANDOM PHP QUESTIONS
+
+70. Add a loading icon to the page (4.8)
+
+71. Create unique id in php (4.9)
+
+72. Re-write URL (6.2)
+
+73. Create Proxy (6.4)
+
+74. Play sound (6.5)
+
+75. Create buttom the plays sound (6.5)
+
+76. Create a desktop notification (6.6)
+
+
+EXTRA QUESTIONS
+
+77. Create backend that echo's your name with PHP
+
+78. Why double quotes and why single quotes?
+
+79. Create ajax that prints out from txt fieldset
+
+80. If you didn't use ajax what can you use?
+
+81. What is AJAX and what do you use it for?
+
+82. Create a text file, this has text that looks like array,  this array contains json objects , the key is name a and the other is name b
+
+83. With php, take out of the file and print out name
+
+84. Create empty array for users
+
+85. Delete the element with the id 2 from the array
+
+86. What is a index?
+
+87. JSON.stringify: 
+
+88. JSON.parse: 
+
+89. WHAT IS PUSH & POP? CREATE EXAMPLES.
+
+90. WHAT IS SHIFT / UNSHIFT? CREATE EXAMPLES.
+
+91. WHAT IS SPLICE? CREATE EXAMPLES. 
+
+92. InsertAdjacentHTML. WHAT ARE THE DIFFERENT FUNCTIONS? HOW TO USE THEM? 
+
+93. AJAX and get throgth address bar
+
+94. Add an array to localstorage
+
+95. Make a counter
+
+96. Add a new input to your create user and post it to your data.txt
+
+97. Create a proxy 
+ 
+98. Create function that prints out a name every 5s
+
+99. Pass a letter from html to an api though the address bar:
+
+100. Add an input for a mobile number and concatinate +45 before the number.
+
+101. Make a function that takes 2 arguments that adds two numbers together.
+
+102. How do you remove an element from DOM, using an eventListener? (2.3)
+
+103. Save somthing to local storage
+
+104. Add something to one of the forms
+
+105. Generatre a random between 0 and 1000
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Array loop</title>
+    <style></style>
+</head>
+<body>
+    Array loop
+    
+<script>
+
+/* QUESTION 1
+Create for loop
+*/
+var aData = ["A","B","C"];
+console.log( aData );
+
+for( var i = 0; i < aData.length; i++ )
+    {
+        console.log( aData[i] );
+    }
+
+/* QUESTION 2
+If login is correct change NO to YES 
+or ELSE NO will be --
+*/ 
+
+var aData1 = ["A","NO","C","D"];
+var sCorrectUserName = "A";
+var sCorrectPassword = "B";
+
+var sUserName = "A";
+var sPassword = "B";
+
+var iPositionOfNO = aData1.indexOf("NO"); 
+
+if( sCorrectUserName == sUserName && sCorrectPassword == sPassword)
+    {
+        aData1[iPositionOfNO] = "YES";
+    }
+else
+    {
+        aData1[iPositionOfNO] = "--";
+    }
+console.log(aData1);
+
+/* QUESTION 3
+Change all NO to YES
+*/ 
+var aData = ["NO","NO","C","NO","E"];
+
+for(var i=0; i < aData.length;i++){
+    if( aData[i] == "NO" )
+    {
+        aData[i] = "YES";
+    }
+}
+console.log(aData);
+
+/*QUESTION 4
+Create loop 
+Every time the letter A i found it will be deleted
+*/
+
+var aData = ["A", "A", "B","A","D","A"];
+
+for( var i = 0; i < aData.length; i++)
+{
+    if( aData[i] == "A" )
+    {
+        aData.splice( i , 1 );
+        i--;
+    }
+}
+
+console.log( aData );
+
+</script>
+</body>
+</html>

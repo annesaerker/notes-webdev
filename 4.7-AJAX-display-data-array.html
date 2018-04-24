@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create a system that via AJAX it gets data from an array and displays it in the page</title>
+</head>
+<body>
+
+
+		<button id="btnGetLetter">GET LETTER</button>
+
+		<div id="boxProducts"></div>
+         
+		<script>
+				btnGetLetter.addEventListener("click", function(){
+
+				  var ajax = new XMLHttpRequest(); // AJAX
+				  ajax.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				     //console.log(this.responseText);
+				     var sajDataFromServer = this.responseText;
+				     console.log(sajDataFromServer);
+				     var ajDataFromServer = JSON.parse( sajDataFromServer );
+				     console.log(ajDataFromServer);
+				     var sDivsProducts = "";
+				     for(var i = 0; i < ajDataFromServer.length; i++){
+				     	var sLetter = ajDataFromServer[i].letter;
+				     	var sColor = ajDataFromServer[i].color;
+				     	sDivsProducts += '<div style="color: '+sColor+'">'+sLetter+'</div>';
+			     		}
+				     	boxProducts.innerHTML = sDivsProducts;
+				     	// boxProducts.insertAdjacentHTML('beforeend', sDivsProducts );
+				     // var sLetter = jDataFromServer.letter;
+				     // var sColor = jDataFromServer.color;
+				     // var sDivLetter = '<div style="color:'+sColor+'">'+sLetter+'</div>';
+				    }
+				  };
+				  ajax.open( "GET", "api-get-letters.php", true );
+				  ajax.send();
+
+				});
+    </script>
+    
+
+    
+</body>
+</html>

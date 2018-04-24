@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Numbers and addition</title>
+    <style></style>
+</head>
+<body>
+    Numbers and addition
+
+<script>
+
+/*
+QUESTION 1
+
+Add two varibles price and tax together. 
+The answer should be 11, using a total varible. 
+(parseInt, parseFloat, Number)
+
+var total = ? HOW DO WE DO IT ?
+console.log(total);
+*/
+
+var price = "10";
+var tax = "1";
+
+var newPrice = Number(price);
+var newTax = Number(tax);
+
+var total = newPrice + newTax;
+console.log(total);
+
+/*
+QUESTION 2
+
+What would you use to show decimals: 
+var price = "10.95"; 
+*/
+
+var price1 = Number(10.95);
+console.log (price1);
+
+var price2 = parseFloat(10.95);
+console.log (price2);
+
+var price3 = parseInt(10.95);
+console.log (price3);
+
+/*
+QUESTION 3
+
+Do whatever you have to do in order 
+to show the number as a number with the
+2 decimals
+10.90
+*/
+
+var price = "10.90";
+var newPrice = Number(price);
+console.log(newPrice);
+
+//SOLUTION - BUT NOT REALLY, SINCE THE OUTPUT IS NOT REALLY A NUMBER
+
+var price = "10.90";
+var newPrice = Number(price).toFixed(2);
+newPrice = Number(newPrice);
+console.log(newPrice);
+
+</script>
+</body>
+</html>
+
+

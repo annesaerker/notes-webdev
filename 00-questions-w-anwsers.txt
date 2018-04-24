@@ -1,0 +1,1101 @@
+QUESTIONS WITH ANWSERS FOR THE RE-EXAM
+
+
+BASIC STRING AND NUMBER QUESTIONS
+
+1. console.log the a variable where the value  = Hi, my name is A B. The year is 2017 (1.1)
+   
+   var name = "Anne";
+   var lastName = "Saerker";
+   var year = 2018;
+   
+   var message = "Hi, my name is " +name+ " " +lastName+ " and the year is " +year;
+   
+   console.log(message);
+
+2. Add two varibles price and tax together. The answer should be 11, using a total varible (parseInt, parseFloat, Number) (1.2)
+   
+   var price = "10";
+   var tax = "1";
+   
+   var newPrice = Number(price);
+   var newTax = Number(tax);
+   
+   var total = newPrice + newTax;
+   console.log(total);
+
+3. What would you use to show decimals: var price = "10.95"; ? (1.2)
+   
+   var price = "10.95";
+   var newPrice = Number(price);
+   console.log(newPrice);
+
+4. How do you make sure you show 2 decimals all the time? (1.2)
+   
+   var price = "10.9577";
+   var newPrice = Number(price).toFixed(2);
+   console.log(newPrice);
+
+
+IF ELSE STATMENT QUESTIONS
+
+5. Create one or two variables and use an if statment to make an comparesome it in an if statment (use {} as you like) (1.3)
+   
+   var name = "Anne";
+   var correctName = "Anne";
+
+   if (name == correctName) {
+       console.log("Yes");
+   } else {
+       console.log("No");
+   }
+
+6. Build a system that allows a user to login with either an email or a phone number. (1.4)
+   
+   var email = "a@a";
+   var correctEmail = "a@a";
+   
+   var password = 1234;
+   var correctPassword = 1234;
+   
+   if (email == correctEmail || password == correctPassword) {
+       console.log("Yes");
+   } else {
+       console.log("No");
+   }
+
+ARRAY QUESTIONS
+
+7. Create array and get value at position 1 (1.5)
+   
+   var array = ["A","B","C"];
+   console.log(array[1]);
+
+8. Create array and then add the letter D to array (1.5) 
+   
+   var array = ["A","B","C"];
+   array.push("D");
+   console.log(array);
+
+9. Create array and then delete the last value (1.5)
+   
+   var array = ["A","B","C"];
+   array.pop;
+   console.log(array);
+
+10. Create array and then add value to the start of array (1.5)
+    
+    var array = ["A","B","C"];
+    array.unshift("D");
+    console.log(array);
+
+11. Create array and then delete from beginning of the array (1.5)
+    
+    var array = ["A","B","C"];
+    array.shift();
+    console.log(array);
+
+12. Create array [A,B,NO,?] and variables for username, password, correctUsername, correctPassword.
+    If the user name and password are correct, you will change the NO to YES in the array, 
+    else you will change the NO to a -- (1.6)
+    
+    var array = ["A","B","NO","?"];
+    var username = "Anne";
+    var correctUsername = "Anne";
+    var password = 1234;
+    var correctPassword = 1234;
+    
+    if (username == correctUsername && password == correctPassword) {
+        array[2] = "Yes";
+    } else {
+        array[2] = "--";
+    }
+
+13. Create array and use splice to delete value in array at position 1 (1.7)
+    
+    var array = ["A","B","C","D"];
+    array.splice(1, );
+    console.log(array);
+
+
+14. Create array and delete value at position 1 and define the number of elements to delete. (1.7)
+    var array = ["A","B","C","D"];
+    array.splice(1,2);
+    console.log(array);
+
+15. Create for loop and loop through an array of letters (1.8)
+    
+    var array = ["A","B","C","D"];
+
+    for(var i = 0; i < array.length; i++){
+        console.log(array[i]);
+    }
+
+16. Create array ["A","NO","C","D"] variables for username, password, correctUsername, correctPassword.
+    Use if statment and indexOf()
+    If login is correct change NO to YES 
+    else NO will be -- (1.8)
+
+    var aData1 = ["A","NO","C","D"];
+    var sCorrectUserName = "A";
+    var sCorrectPassword = "B";
+    var sUserName = "A";
+    var sPassword = "B";
+    var iPositionOfNO = aData1.indexOf("NO"); 
+
+    if( sCorrectUserName == sUserName && sCorrectPassword == sPassword)
+        {
+            aData1[iPositionOfNO] = "YES";
+        }
+    else
+        {
+            aData1[iPositionOfNO] = "--";
+        }
+    
+    console.log(aData1);
+
+17. Create array ["NO","NO","C","NO","E"] and create for loop, that changes all NO to Yes (1.8)
+    
+    var array = ["NO","NO","C","NO","E"];
+    
+    for(var i = 0; i < array.length; i++){
+        if (array[i] == "NO" )
+        {
+            array[i] = "Yes";
+        }
+    }
+
+    console.log(array);
+
+18. Create array ["A", "A", "B","A","D","A"] and create for loop that deletes all A's (1.8)
+    
+    var array = ["A", "A", "B","A","D","A"];
+
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == "A") {
+            array.splice(i,1);
+            i--;
+        }
+    }
+    
+    console.log(array);
+
+19. Create array [ ["A",["B"]],["C",[["D",["XX",[["YY"]]]],["E"]]],["X"]] and locate position of YY (1.9)
+    
+    var aData = [ ["A",["B"]],["C",[["D",["XX",[["YY"]]]],["E"]]],["X"]];
+    console.log(aData);
+
+        
+        var aData = [ 
+                                    ["A",["B"]],
+                                    ["C",
+                                        [
+                                            ["D",
+                                                ["XX",
+                                                    [
+                                                        ["YY"]
+                                                    ]
+                                                ]
+                                            ],
+                                            ["E"]
+                                        ]
+                                    ],
+                                    ["X"]
+                                ];
+
+        console.log( aData[1][1][0][1][1][0][0] );
+
+20. Create array [ [1,"A"],[2,"B"] ] and create a loop that makes it possible to use one variable to display the price and name of both products (1.9)
+    
+    var array = [ [1,"A"],[2,"B"] ];
+
+    for (var i = 0; i < array.length; i++)
+    {
+        var price = array[i][0];
+        var product = array[i][1];
+
+        var message = "Price: " +price+ " Product: " +product;
+        console.log(message);
+    }
+
+SINGLE PAGE APPLICATION 
+
+21. How do you set up a single page application? (2.0)
+    
+    By creating a loop, that loops through the class of the buttons associated with the different pages.
+    Then create a eventListener that listens for the click of a page button.
+    A loop inside this loop, loops trhough the pages it should gives them a display=none value.
+    Only the cliked page gets a display=flex.
+
+INSERT ADJECENT HTML
+
+22. Give an example of how you could use an insertAdjacentHTML? (2.1)
+
+    <div id="one">one</div>
+
+    <script>
+        var insertDiv = document.getElementById('one');
+        insertDiv.insertAdjacentHTML('afterend', '<div id="two">two</div>');
+    </script>
+
+    1. BEFORE BEGIN
+	2. AFTER BEGIN
+	3. BEFORE END
+	4. AFTER END
+    
+    1<DIV>23</DIV>4
+
+LocalStorage
+
+23. Convert object to string (2.2) and then covert i back into an object.
+
+    var aObject = ["A","B","C","D"];
+    console.log(aObject);
+
+    var sObject = JSON.stringify(aObject);
+    console.log(sObject);
+
+    var saObject = JSON.parse(sObject);
+    console.log(saObject);
+
+24. Write text that looks like an array to the local storage (2.2)
+
+    localStorage.sObject = sObject;
+    where.name = value;
+
+25. Create array with 3 users (just the name) and save it to the localStorage (2.2)
+    
+    var aUsers = ["Anne","Katrin","Agnes"];
+    console.log(aUsers);
+
+    var sUsers = JSON.stringify(aUsers);
+    console.log(sUsers);
+
+    localStorage.userNames = sUsers;    
+
+26. Delete a specifik variable from the local storage (2.2)
+
+    localStorage.removeItem("userNames");
+
+27. Clear the local storage (2.2)
+
+    localStorage.clear();
+
+28. Read from localstorage (2.2)
+
+    var saUsers = localStorage.userNames;
+    console.log(saUsers);
+
+
+FUNCTION QUESTIONS
+
+29. Create a function that calls another function (2.4)
+
+    function one() {
+        two();
+    }
+
+    one();
+
+    function two() {
+        console.log("Function two");
+    }
+
+30. Create a function with two arguments (2.4)
+
+    function one(name,lastName) {
+        console.log(lastName,name);
+    }
+
+    one("anne","saerker");
+
+31. Create a function with five arguments (2.4)
+    
+    function one(name,lastName,email,phone,age) {
+        console.log(phone,name);
+    }
+
+    one("anne","saerker","a@a",1234,23);
+
+32. Create a function that returns a value (2.4) 
+
+    function getName(){
+        return "Anne";
+    }
+
+    var name = getName();
+    console.log(name);
+
+33. Create a function that takes two arguments.
+    The 1st arg is a number
+    The 2nd arg is a product name
+    The function RETURNS an array containing the number and the 
+    product name
+    Show the array in the console (2.4)
+
+    function getProducts( iNumber , sProductName ){
+        return [iNumber,sProductName];
+    }
+    
+    var aProducts = getProducts(1,"B");
+    console.log( aProducts );
+
+JSON QUESTIONS
+
+34. Create empty JSON object (2.5)
+    var jObject = {};
+    console.log(jObject);
+
+35. Create JSON object with the a key and an value and extract and show the name (2.5)
+    
+    var jObject = {"name":"Anne"};
+    console.log(jObject.name);
+
+36. Create a JSON object with a name, lastname and school. Show name and then show lastname (2.5)
+    
+    var jObject = {"name":"Anne","lastName":"Saerker","School":"KEA"};
+    console.log(jObject.lastName);
+
+37. Create JSON object with name and lastname. Write a age to the object (2.6)
+    
+    var jObject = {"name":"Anne","lastName":"Sorensen"};
+    console.log(jObject);
+
+    jObject.age = 23;
+    console.log(jObject);
+
+38. Update lastname to x (2.6)
+    
+    var jObject = {"name":"Anne","lastName":"Sorensen"};
+    console.log(jObject);
+
+    jObject.lastName = "x";
+    console.log(jObject);
+
+39. Delete lastName (2.6)
+    var jObject = {"name":"Anne","lastName":"Sorensen"};
+    console.log(jObject);
+
+    delete jObject.lastName;
+    console.log(jObject);
+
+JSON AND ARRAY QUESTIONS
+
+40. Create an array with an JSON object (2.7)
+    
+    var ajObject = [{}];
+    console.log(ajObject);
+
+41. Read name from the object (2.7)
+    
+    var ajObject = [{"name":"Anne"}];
+    console.log(ajObject[0].name);  
+
+42. Add another object with a name and read that name (2.7)
+    
+    var ajObject = [{"name":"Anne"},{"name":"Agnes"}];
+    console.log(ajObject[1].name);
+
+43. Create an array with a JSON obejct
+    The JSON object will contain a name and phone key
+    The value for the name is A and the value for the phone is this array of numbers [1,2,3]
+    console.log (number 2)
+
+    var ajObject = [{"name":"Anne","phone":[1,2,3]}];
+    console.log(ajObject[0].phone[1]);
+
+44. Add a user to an array. The user is a JSON object (2.8)
+    
+    var ajObject = [{"name":"Anne","phone":[1,2,3]}];
+    console.log(ajObject[0].phone[1]);
+
+    var newUser = {"name":"Agnes"};
+    ajObject.push = newUser;
+    console.log(ajObject);
+
+SET TIMEOUT AND SET INTERVAL QUESTIONS
+
+45. Create a function and use a setTimout (2.9)
+    
+    setTimeout(function () {
+        console.log("TIMEOUT");
+    }, 1000)
+
+46. Create a function and use a setInterval (2.9)
+
+    setInterval(function() {
+        console.log("SETINTERVAL");
+    }, 1000);
+
+47. Create counter variable, then create function with a setInterval that counts the time the function has run (2.9)
+    
+    var counter = 1;
+    
+    setInterval( function(){
+        console.log(counter);
+        counter++;
+    } , 1000);
+
+
+UNIQUEID QUESTIONS
+
+48. Create uniqueID (3.0)
+
+    ar aAllowedCharacters = "123456789ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz";
+
+    function getUniqueId(){
+  
+        var sUniqueId = "";
+
+        for(var i = 0; i < 64; i++){
+            var iRandomNumber = Math.floor( Math.random() * aAllowedCharacters.length );
+            sUniqueId += aAllowedCharacters[iRandomNumber];
+        }
+        return sUniqueId;
+    }
+
+    console.log( getUniqueId() );
+
+49. Create JSON object with a uniqueid (3.0)
+    
+    var aUsers = [];
+
+    for( var i = 0; i < 10; i++ ){
+        var jUser = {};
+        jUser.id = getUniqueId();
+        jUser.name = "A";
+        aUsers.push( jUser );
+    }
+
+    console.log( aUsers );
+
+RANDOM NUMBER
+
+50. Print out everyother number, all straigth numbers from 0 to 50.
+
+    for(var i = 0; i < 50; i+=2){
+        console.log(i);
+    }
+
+PHP QUESTIONS
+
+
+PHP ARRAY QUESTIONS
+
+51. Create empty array (4.0)
+
+    $array = [];
+
+52. Create array with 2 items (4.0)
+    
+    $array = ["A","B"];
+
+53. Read first item in array (4.0)
+
+    $array = ["A","B"];
+    echo $array[0];
+
+54. Read everything in array (4.0)
+
+    $array = ["A","B"];
+    print_r($array);
+
+    count amount of items
+    echo count( $array );
+
+55. Push new item to array and update item in array (4.0)
+
+    CREATE
+    $array = ["A","B"];
+    print_r($array);
+    
+    PUSH
+    array_push($array, "C");
+    print_r($array);
+
+    UPDATE
+    $array[2] = "H";
+    print_r($array);
+
+56. Delete item in array (4.0)
+
+    $array = ["A","B","C","D","E"];
+    print_r($array);
+
+    unset( $array[3] );
+    array_splice( $array , 1 , 1);
+    var_dump($array);
+
+57. Delete everything in array (4.0)
+    
+    unset( $array );
+
+58. Mix HTML and php (4.0)
+
+    <div style='color: blue;'>
+        <?php
+            $sLetter = 'A';
+            echo $sLetter;
+        ?>
+    </div>
+
+ADDRESS BAR QUESTIONS
+
+59. Get ID in the address bar (4.2)
+
+
+
+PHP JSON QUESTIONS
+
+60. Convert text into object (4.3)
+    
+    // Open the file
+    $sData = file_get_contents( 'data.txt' );
+    // Get the data and convert it to an object
+    $aData = json_decode( $sData );
+    // Show the letter
+    echo $aData;
+
+61. Get file contents from txt file ()
+
+    $getProducts = file_get_contents('data.txt');
+    $aProduct = json_decode($getProducts);
+    print_r($aProduct);
+
+62. Write something to a txt file 
+
+    $aProducts = ["A","nnn","C"];
+    $asProducts = json_encode($aProducts);
+    file_put_contents('data.txt', $asProducts);
+
+63. Create empty JSON object (4.5) 
+
+    {}
+
+64. // Create JSON object and put in txt file 
+    (have txt file ready with [])
+
+    $sjUsers[0]->name = "Anne";
+    $ajUsers = json_encode($sjUsers);
+    file_put_contents('data.txt', $ajUsers);
+    echo $ajUsers;
+
+    // Read from JSON object (4.5) 
+
+    $ajUsers = file_get_contents('data.txt');
+    $sajUsers = json_decode($ajUsers);
+    print_r($sajUsers[1]->name);
+
+    // Update JSON object (4.5)
+    
+    for( $i = 0; $i <= count($sajUsers); $i++){
+        if($sajUsers[$i]->name == "Anne"){
+            echo "HELLO";
+            $sajUsers[$i]->lastName = "Saerker";
+        }
+    }
+
+    $ajUsers = json_encode($sajUsers);
+    file_put_contents('data.txt', $ajUsers); 
+
+    // Delete from JSON object (4.5) 
+    
+    $ajUsers = file_get_contents('data.txt');
+    $sajUsers = json_decode($ajUsers);
+    var_dump($sajUsers);
+
+    for( $i = 0; $i <= count($sajUsers); $i++){
+        if( $sajUsers[$i]->lastName == "Saerker"){
+            echo "delete user";
+            array_splice($sajUsers, $i, 1);
+        }
+    }
+
+    $sajDeleted = json_encode($sajUsers);
+    file_put_contents('data.txt', $sajDeleted);
+
+67. Create a array with a JSON object (4.5) 
+
+    $sajProducts = '[{"name":"A"},{"name":"B"}]';
+    print_r($sajProducts);
+    // convert the text to an object
+    $ajProducts = json_decode( $sajProducts );
+    // new object
+    $sjProduct = '{"name":"K"}';
+    // convert the text to an object
+    $jProduct = json_decode( $sjProduct );
+    // push new object to other variable
+    array_push( $ajProducts , $jProduct );
+    // convert object to text
+    $sajProducts = json_encode( $ajProducts );
+    echo $sajProducts;
+
+67.1 Read from Array with json
+
+    $sUsers = file_get_contents('data.txt');
+    $ajUsers = json_decode($sUsers);
+
+    echo $ajUsers;
+    print_r($ajUsers[1]->name);
+
+AJAX QUESTIONS
+
+68. Get letter with AJAX (4.6)
+    
+    <button id="btnGetLetter">GET LETTER</button>
+    
+    <script>
+		btnGetLetter.addEventListener("click", function(){
+			var ajax = new XMLHttpRequest(); // AJAX
+			ajax.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+				     console.log(this.responseText);
+				}
+			};
+			ajax.open( "GET", "4.6-api-get-letter.php", true );
+			ajax.send();
+		});
+    </script>
+
+69. Use AJAX to get data from an array and display it in the page (4.7)
+
+
+RANDOM PHP QUESTIONS
+
+70. Add a loading icon to the page (4.8)
+
+71. Create unique id in php (4.9)
+
+    echo uniqueId();
+
+72. Re-write URL (6.2)
+
+    RewriteEngine On
+    RewriteRule ^$ test.html
+    RewriteRule ^contact-us$ contact-us.php
+
+73. Create Proxy (6.4)
+
+    $sWebsite = file_get_contents("http://www.kea.dk/da/");
+    $sWebsite = str_replace("Om KEA", "WHATS UP", $sWebsite);
+    echo $sWebsite;
+
+74. Play sound (6.5)
+   
+    var oSound = new Audio ('sound.mp3');
+    oSound.play();
+
+75. Create buttom the plays sound (6.5)
+    
+    btnPlaySound.eventListener("click", function(){
+        var oSound = new Audio('sound.mp3');
+        oSound.play();
+    });
+
+76. Create a desktop notification (6.6)
+
+    function notifyMe(){
+        if(!("Notification" in window)){
+            alert("Dose not support");
+        }
+        else if (Notification.permission === "granted"){
+            var notification = new Notification("Hi there i am a Notification");
+        }
+    }
+
+    notifyMe();
+
+
+EXTRA QUESTIONS
+
+77. Create backend that echo's your name with PHP
+
+    $sMyName = 'Anne Saerker';
+    echo $sMyName;
+
+78. Why double quotes and why single quotes?
+
+    " " - You can use it for string and variables at the same time. (Takes more space)
+    ' ' - Is used only for string
+
+79. Create ajax that prints out from txt fieldset
+
+    var request = new XMLHttpRequest();
+   request.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+            var sDataFromServer = JSON.parse(this.responseText);
+          }
+    };
+    request.open("GET", "api-get-user-list.php", true);
+    request.send();
+
+80. If you didn't use ajax what can you use?
+
+    PHP, HTML Form,  ??JavaScript??
+
+81. What is AJAX and what do you use it for?
+
+   The letters in AJAX stand for: AJAX = asynchronous javascript and XML, but now it should be called AJAJ = asynchronous javascript and json. 
+   XML is oudated → JSON is in! 
+   AJAX is a call to the server that works without reload → to POST or GET data
+   GET: passing data to get more data, pass 2kb data, visible in the adress bar 
+   POST: passing data to save data, unlimited of data, isn't visible, (fx login, add) 
+
+82. Create a text file, this has text that looks like array,  this array contains json objects , the key is name a and the other is name b
+
+    data.txt --> [{"name":"a"},{"name":"b"}]
+
+83. With php, take out of the file and print out name
+
+    $sName = file_get_contents('data.txt');
+    $jName = json_decode($sName);
+
+    for ($i=0; $i < count($jName); $i++) {
+        echo $jName[$i]->name;
+    }
+
+84. Create empty array for users
+
+    $aUsers = [];
+
+    var aUsers = [];
+    
+    //Create empty object with users
+    var jUser = {};
+   
+    //Enter your name to the object
+    jUser.name = "katrin";
+   
+    //Push opject to the array
+    aUsers.push(jUser);
+   
+    //Delete
+    aUsers.splice(0,1);
+
+85. Delete the element with the id 2 from the array
+
+    var array = [{"id":1,"name":"a"},{"id":2,"name":"b"}];
+    console.log(array);
+
+    for(var i = 0; i < array.length; i++){
+        if(array[i].id === 2){
+            console.log("x");
+            array.splice(i,1);
+        }
+    }
+
+    console.log(array);
+
+86. What is a index?
+
+    An integer that defines the position of an element inside of an array.
+
+87. JSON.stringify: 
+
+    javascript
+    object -> text
+
+88. JSON.parse: 
+
+    javascript
+    text -> object
+
+89. WHAT IS PUSH & POP? CREATE EXAMPLES.
+
+    push add value in the END of an array 
+    var array = ["A","B","C"];
+    array.push("D");
+    console.log(array);
+
+    pop deletes value in the END of an array 
+    var array = ["A","B","C"];
+    array.pop();
+    console.log(array);
+
+90. WHAT IS SHIFT / UNSHIFT? CREATE EXAMPLES.
+
+    unshift adds value in the start of an array
+    var array = ["A","B","C"];
+    array.unshift("G");
+    console.log(array);
+
+    shift deletes value in the start of an array
+    var array = ["A","B","C"];
+    array.shift();
+    console.log(array);
+
+91. WHAT IS SPLICE? CREATE EXAMPLES. 
+
+    splice deletes a value at a specifik location
+    takes 2 arguments: (element to delete by arrayPosition ( i or $i ) , how many elements to delete)
+    var array = ["A","B","C"];
+    array.splice(2);
+    console.log(array);
+
+92. InsertAdjacentHTML. WHAT ARE THE DIFFERENT FUNCTIONS? HOW TO USE THEM? 
+
+    1. BEFORE BEGIN
+	2. AFTER BEGIN
+	3. BEFORE END
+	4. AFTER END
+    
+    1<DIV>23</DIV>4
+
+
+QUESTIONS ASKED AT THE EXAM:
+
+93. AJAX and get througth address bar
+
+    <?php
+
+        $id = $_GET['id'];
+        $theFile = file_get_contents('data.txt');
+        $atheFile = json_decode($theFile);
+        
+        for ($i=0; $i < count($atheFile); $i++) {
+            if( $atheFile[$i]->id == $id){
+                var_dump($atheFile[$i]);
+            }
+        }
+
+    ?>
+    
+    <script>
+
+    function deleteUserClick (){
+    // When button is clicked the get API that gets the form
+        btnDeleteUser.addEventListener("click", function(){
+        //console.log("X");
+        var deleteUserId = this.getAttribute('data-productId');
+      
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                //document.getElementById("demo").innerHTML = this.responseText;
+                //console.log("DELETE PRODUCT");
+                window.location.reload();
+                }
+            };
+            xhttp.open("GET", "api-delete-user.php?id="+deleteUserId, true);
+            xhttp.send();
+        });
+    }
+
+    </script>
+
+94. Add an array to localstorage
+
+    var aProducts = ["A","B","C","D"];
+    console.log(aProducts);
+   
+    var sProducts = JSON.stringify(aProducts);
+    console.log(sProducts);
+
+    localStorage.sProducts = sProducts;
+
+95. Make a counter
+
+    var iCounter = 1;
+    setInterval( function()
+        {
+            console.log( iCounter );
+            iCounter++;
+        } , 1000 );
+
+96. Add a new input to your create user and post it to your data.txt
+
+
+
+97. Create a proxy 
+
+    $sWebsite = file_get_contents( "http://kea.dk" );
+    $sWebsite = str_replace( "Om KEA" , "TEST", $sWebsite );
+    echo $sWebsite;
+ 
+98. Create function that prints out a name every 5s
+
+    setInterval(function() {
+        console.log("Anne");
+    }, 5000);
+
+99. Pass a letter from html to an api though the address bar:
+
+   <body>
+        <a href="pageTwo.php?letter=A">A</a>
+   </body>
+   
+   <?php
+        $sLetter = $_GET['letter'];
+   ?>
+
+100. Add an input for a mobile number and concatinate +45 before the number.
+    <?php
+        1. Anwser one
+           //In the create user API
+           $jNewUser->mobile = '+24'.$_POST['txtUserMobile'];
+
+        2. Anwser two
+           $sAreaCode = '+45 ';
+           $jNewUser->mobile= $sAreaCode.$_POST['txtUserMobile'];
+    ?>
+
+101. Make a function that takes 2 arguments that adds two numbers together.
+
+    1. ANSWER 
+    function addTwoNumbers(iNumber, iNumber2) {
+       var sum = iNumber + iNumber2;
+       return sum;
+    }
+   
+    var resault = addTwoNumbers(2, 2);
+    console.log(resault);
+    //resault would be 4
+
+    2. ANSWER
+    function getTotal ( numberOne, numberTwo){
+       var total = numberOne + numberTwo;
+       return total;
+    }
+    console.log(getTotal(5,10));
+
+102. How do you remove an element from DOM, using an eventListener? (2.3)
+
+    <div>
+        <div id="boxProducts">
+        <div id="lblProductA">A<span>XXXXX</span></div>
+        <div id="lblProductB">B</div>
+    </div>
+
+    <script>
+
+        var lblProductA = document.querySelector("#lblProductA");
+        lblProductA.addEventListener("click",function(){
+            this.remove();
+        }); 
+
+    </script>
+
+103. Save somthing to local storage
+
+    var aUserNames = ["A","B","C"];
+    console.log(aUserNames);
+    var sUserNames = JSON.stringify(aUserNames);
+    localStorage.sUserNames = sUserNames;
+
+104. Add something to one of the forms
+
+105. Generatre a random between 0 and 1000
+
+    function getRandomNumber(min, max) {
+        return Math.round(Math.random() * (max - min) + min);
+    }
+
+    console.log(getRandomNumber(0,1000));
+
+106. Go throgth txt find, name and print it out as many time's as the ID is
+  
+  // [{"id": 2, "name": "Katrin"}, {"id": 3, "name": "Birna"},{"id": 4, "name": "Jon"}]
+  $sData = file_get_contents('exame.txt');
+  $aData = json_decode($sData);
+  $sGetName = "Jon";
+  // $sName = $_GET['name'];
+  for ($i=0; $i < count($aData); $i++) {
+    if($aData[$i]->name == $sGetName){
+      for ($j=0; $j < $aData[$i]->id; $j++) {
+        echo $aData[$i]->name;
+      }
+    }
+  }
+
+107. Create a text file, this has text that looks like array,  this array contains json objects , the key is name a and the other is name b
+    
+    // TXT FILE CONTAINS THIS: [{"name": "A"},{"name" : "B"}];
+    //with php, take out of the file print out name
+    $sList = file_get_contents('list.txt');
+    $jList = json_decode($sList);
+    for ($i=0; $i<count($jList); $i++) {
+      echo $jList[$i]->name;
+    }
+
+108. Create empty array for users
+    $aUsers = [];
+    $jUser = json_decode('{}');
+    $jUser->userId = '23';
+    $jUser->userName = 'John';
+    array_push($aUsers, $jUser);
+    var_dump($aUsers);
+
+109. Get and pass my name and last name in the address bar
+
+$name = $_GET['name'];
+$lastName = $_GET['lastName'];
+
+$theFile = file_get_contents('data.txt');
+$atheFile = json_decode($theFile);
+for ($i=0; $i < count($atheFile); $i++) {
+  if( $atheFile[$i]->name == $name && bb->lastname ==$lastName){
+    var_dump($atheFile[$i]);
+  }
+}
+
+ xhttp.open("GET", "api-delete-user.php?id="+deleteUserId+"&lastName="+lastName+", true);
+            xhttp.send();
+        });
+
+
+SCRIPT
+
+110. Create empty array for users
+    
+    var aUsers = [];
+
+111. Create empty object with users
+
+    var jUser = {}
+
+112. Enter your name
+    
+    jUser.name = "katrin";
+
+113. Add object to the array
+    
+    aUsers.push(jUser);
+
+114. Delete
+    aUsers.splice(0,1);
+
+115. Create ajax what prints out from txt fieldset
+
+      btnShow.addEventListener("click", function(){
+        console.log("clicked");
+        var ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function(){
+          var toDiv = '';
+          if(this.readyState == 4 && this.status == 200){
+            var aDataFromServer = JSON.parse( this.responseText);
+            console.log(aDataFromServer);
+            for (var i = 0; i < aDataFromServer.length; i++) {
+              toDiv += '<p>'+aDataFromServer[i].name+'</p>';
+            }
+            divAllNames.innerHTML = toDiv;
+          }
+        }
+        ajax.open("GET", "api-get.php", true);
+        ajax.send();
+      });
+
+116. Delete the element with the id 2 from the array
+    
+    var aUsers = [{"id":1, "name": "B"}, {"id":2, "name": "A"}];
+    //console.log("first", aUsers);
+    var itemToFind = 2;
+
+    for (var i = 0; i < aUsers.length; i++) {
+        //console.log("first", aUsers[i]);
+        if(aUsers[i].id == itemToFind){
+          //console.log("her");
+          aUsers.splice(i,1);
+        }
+    }
+
+    console.log("second:", aUsers);

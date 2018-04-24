@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Array in if statment</title>
+    <style></style>
+</head>
+<body>
+    Array in if statment
+    
+<script>
+
+// DO NOT TOUCH IT
+var aData = ["A","B","NO","?"];
+var sCorrectUserName = "A"; // NO TOUCH
+var sCorreUserPassword = "B"; // NO TOUCH
+
+var sUserName = "A";
+var sPassword = "B";
+
+/*
+If the user name and password are correct
+you will change in the array the NO to YES
+else you will change the NO to a --
+*/
+
+if( sCorrectUserName == sUserName &&
+        sCorreUserPassword == sPassword )
+{
+    aData[2] = "YES";
+}
+else
+{
+    aData[2] = "--";
+}
+
+console.log(aData);
+
+</script>
+</body>
+</html>

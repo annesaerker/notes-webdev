@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remove from DOM</title>
+<style>
+</style>
+</head>
+<body>
+
+<div id="boxProducts">
+    <div id="lblProductA">A<span>XXXXX</span></div>
+    <div id="lblProductB">B</div>
+</div>
+
+<script>
+
+var lblProductA = document.querySelector("#lblProductA");
+lblProductA.addEventListener("click",function(){
+    this.remove();
+    // this.parentNode.removeChild(this);
+    // lblProductA.remove(this);
+});
+
+
+</script>
+</body>
+</html>

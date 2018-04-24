@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InsertAdjacentHTML</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<div id="lblProducts">
+    <div>SHOES</div>
+</div>
+<button id="btnShowProducts">LOAD MORE</button>
+
+<script>
+
+		// Pretend this data came from the server
+		var aProducts = ["T-SHIRT","TABLE","CHAIR"];
+        // Show the product when the button is clicked
+        var btnShowProducts = document.querySelector("#btnShowProducts");
+        btnShowProducts.addEventListener("click",function(){
+            // <div>XXXXXX</div>
+            var sProductName = "";
+            var sDivProduct = "";
+            var lblProducts = document.querySelector("#lblProducts");
+           for(var i = 0; i < aProducts.length; i++)
+           {
+                sProductName = aProducts[i]; // T-SHIRT 0.0000001 
+                console.log(sProductName);
+                // <div>T-SHIRT</div>
+                sDivProduct += "<div>"+sProductName+"</div>";
+                console.log(sDivProduct);	 			
+           }
+           lblProducts.insertAdjacentHTML( "beforeend" , sDivProduct );
+        });
+  
+
+</script>
+</body>
+</html>

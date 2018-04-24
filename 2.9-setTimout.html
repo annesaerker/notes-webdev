@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Timeout and Interval</title>
+</head>
+<body>
+
+<script>
+    // Run this only time and one time only
+    //          run this       milliseconds
+    
+    setTimeout( function(){
+        console.log("TIMEOUT");
+    } , 1000 );
+    
+
+    // Run something always at a certain time
+    //           run this       always after 1sec
+    
+    setInterval( function(){
+        console.log("INTERVALS");
+    } , 1000  );
+    
+
+    setTimeout( function(){
+        showData();
+    } , 5000  );
+
+    function showData(){
+        console.log("A");
+    }
+
+// Create counter variable 
+// Create function with setInterval that counts the time it has run 
+    var iCounter = 1;
+    setInterval( function()
+        {
+            console.log( iCounter );
+            iCounter++;
+        } , 1000 );
+    
+
+</script>
+</body>
+</html>

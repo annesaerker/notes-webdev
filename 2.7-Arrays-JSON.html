@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ARRAYS AND JSON</title>
+    <style></style>
+</head>
+<body>
+   ARRAYS AND JSON
+    
+<script>
+
+/* 1
+Create an array with an JSON object
+*/
+
+var ajUsers = 
+    [
+        {"name":"A"}
+    ];
+
+console.log( ajUsers );
+
+/* 2
+Read name from the object
+*/
+var ajUsers = 
+    [
+        {"name":"A"}
+    ];
+
+console.log( ajUsers[0] );
+console.log( ajUsers[0].name );
+
+/* 3
+Add another object with a name and read that name
+*/
+var ajUsers = 
+    [
+        {"name":"A"},
+        {"name":"B"}
+    ];
+
+console.log( ajUsers[0].name );
+console.log( ajUsers[1].name );
+
+/* 4
+Create an array with a JSON obejct
+The JSON object will contain a name and phone key
+The value for the name is A and the value for the phone is this array of numbers [1,2,3]
+console.log (number 2)
+*/
+var ajUsers = [
+                {
+                    "name":"A" , 
+                    "phones":[1,2,3] 
+                }
+            ];
+
+console.log( /* Show number 2 */ );
+console.log( ajUsers[0].phones[1] );
+
+
+
+</script>
+</body>
+</html>
+
